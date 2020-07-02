@@ -23,9 +23,5 @@ namespace ExamenPP
             string str = "Nombre: " + Nombre + "\nEdad: " + Edad.ToString() + "\nNacionalidad: " + Nacion + "\nSueldo: " + Sueldo.ToString();
             return str;
         }
-
-
-
-
     }
 }

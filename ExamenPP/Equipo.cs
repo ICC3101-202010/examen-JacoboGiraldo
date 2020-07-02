@@ -10,14 +10,10 @@ namespace ExamenPP
             espTipo = ET;
             nombre = N;
         }
-
         private string tipo; // Nacional - Liga
         private string espTipo; // Nombre de la nacion - Nombre de la liga
         private string nombre; // Nombre del equipo
-
-        private List<Jugadores> JugadoresEquipo;
-        
-
+        List<Jugadores> JugadoresEquipo = new List<Jugadores>();
         public string Tipo { get => tipo; set => tipo = value; }
         public string EspTipo { get => espTipo; set => espTipo = value; }
         public string Nombre { get => nombre; set => nombre = value; }
@@ -27,15 +23,19 @@ namespace ExamenPP
             Console.WriteLine("Nombre del equipo: "+nombre);
             Console.WriteLine("Tipo de equipo: "+tipo+" -> "+espTipo);
             Console.WriteLine("Plantel de Jugadores:");
-            foreach (Jugadores JugadorRandom in JugadoresEquipo)
+            if (JugadoresEquipo.Count != 0)
             {
-                Console.WriteLine(JugadorRandom.GetInfo());
+                foreach (Jugadores JugadorRandom in JugadoresEquipo)
+                {
+                    Console.WriteLine(JugadorRandom.GetInfo());
+                }
             }
+            else
+                Console.WriteLine("No hay jugadores pertenecientes a este equipo");
+                
         }
-
         public void AgregarJugador(string No, int Ed, string Na, int Su, string Po, int PtA, int PtD, int NuC)
         {
-            
             if (tipo == "Nacional" && espTipo == Na)
             {
                 Jugadores JX = new Jugadores();
