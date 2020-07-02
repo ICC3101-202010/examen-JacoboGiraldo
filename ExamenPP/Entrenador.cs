@@ -10,7 +10,7 @@ namespace ExamenPP
 
         private int PtosTactica;
 
-        public void CambiarJugador()
+        public void CambiarJugador(Jugadores P1, Jugadores P2)
         {
 
         }

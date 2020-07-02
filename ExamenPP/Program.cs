@@ -6,7 +6,18 @@ namespace ExamenPP
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+
+            Equipo NewTeam = new Equipo();
+
+
+
+
+
+
+
+
+
         }
     }
 }
