@@ -17,5 +17,7 @@ namespace ExamenPP
         public int PtosAtaque1 { get => PtosAtaque; set => PtosAtaque = value; }
         public int PtosDefensa1 { get => PtosDefensa; set => PtosDefensa = value; }
         public int NumeroCamiseta1 { get => NumeroCamiseta; set => NumeroCamiseta = value; }
+
+
     }
 }

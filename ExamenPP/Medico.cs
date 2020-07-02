@@ -9,12 +9,12 @@ namespace ExamenPP
         }
 
         private int PtosExperiencia;
-
-        public void Evaluar()
+        /*
+        public bool Evaluar()
         {
 
         }
-
+        */
         public void Curar()
         {
 

@@ -15,9 +15,9 @@ namespace ExamenPP
 
                 if (Seleccion == "1")
                 {
-                    Console.WriteLine("Ingrese el tipo de equipo (Liga/Nacional)");
+                    Console.WriteLine("Ingrese el tipo de equipo (Liga/Nacional):");
                     string tipo = Console.ReadLine();
-                    Console.WriteLine("Especifique el nombre de la liga o nacinalidad del equipo:");
+                    Console.WriteLine("Especifique el nombre de la liga o el pais de origen del equipo:");
                     string espTipo = Console.ReadLine();
                     Console.WriteLine("Inserte el nombre del equipo:");
                     string nombre = Console.ReadLine();
